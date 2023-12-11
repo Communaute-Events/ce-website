@@ -42,7 +42,7 @@ export default function Component() {
                 </p>
               </div>
               <div className="space-x-4">
-                <Button className="bg-[#0D9488] hover:bg-[#36776b] text-white py-2 px-6 rounded-md" variant="filled">
+                <Button className="bg-[#0D9488] hover:bg-[#36776b] text-white py-2 px-6 rounded-md">
                   Get Started
                 </Button>
                 <Button

@@ -30,8 +30,8 @@ export function Navbar() {
             <Link className="text-sm font-medium text-gray-400 hover:underline dark:text-gray-300" href="/#projects">
                 Projects
             </Link>
-            <Link className="text-sm font-medium text-gray-400 hover:underline dark:text-gray-300" href="https://discord.gg/HUzcrSCAZQ">
-                Contact
+            <Link className="text-sm font-medium text-gray-400 hover:underline dark:text-gray-300" href="discord">
+                Discord
             </Link>
         </nav>
       </header>

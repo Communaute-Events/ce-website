@@ -5,40 +5,12 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { CardHeader, CardContent, Card } from "@/components/ui/card"
+import { Navbar } from "@/components/Navbar"
 
 export default function Component() {
   return (
     <div className="flex flex-col min-h-screen bg-[#1D1D1F] dark:bg-gray-900">
-      <header className="px-4 lg:px-6 h-16 flex items-center justify-between border-b border-[#0D9488]">
-        <Link className="flex items-center justify-center" href="#">
-          <img
-            alt="Logo"
-            className="h-6 w-6"
-            height="24"
-            src="/logo.png"
-            style={{
-              aspectRatio: "24/24",
-              objectFit: "cover",
-            }}
-            width="24"
-          />
-          <span className="ml-2 text-lg font-bold text-gray-200 dark:text-gray-200">Communauté Events</span>
-        </Link>
-        <nav className="flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium text-gray-400 hover:underline dark:text-gray-300" href="/">
-            Home
-          </Link>
-          <Link className="text-sm font-medium text-gray-400 hover:underline dark:text-gray-300" href="about">
-            About
-          </Link>
-          <Link className="text-sm font-medium text-gray-400 hover:underline dark:text-gray-300" href="#projects">
-            Projects
-          </Link>
-          <Link className="text-sm font-medium text-gray-400 hover:underline dark:text-gray-300" href="contact">
-            Contact
-          </Link>
-        </nav>
-      </header>
+      <Navbar/>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-[#1D1D1F] dark:bg-gray-800">
           <div className="container px-4 md:px-6">
@@ -63,12 +35,14 @@ export default function Component() {
                 </p>
               </div>
               <div className="space-x-4">
-                <Button className="bg-[#0D9488] hover:bg-[#36776b] text-white py-2 px-6 rounded-md">À propos</Button>
+                <a href="about">
+                  <Button className="bg-[#0D9488] hover:bg-[#36776b] text-white py-2 px-6 rounded-md">À propos</Button>
+                </a>
                 <a href="https://github.com/Communaute-Events">
                   <Button className="bg-[#333] hover:bg-[#222] text-white py-2 px-6 rounded-md">
-                  <GithubIcon className="w-4 h-4 mr-2" />
-                  GitHub
-                </Button>
+                    <GithubIcon className="w-4 h-4 mr-2" />
+                    GitHub
+                  </Button>
                 </a>
               </div>
             </div>

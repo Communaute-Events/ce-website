@@ -7,6 +7,16 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Communauté Events',
   description: 'Open-source, dedicated to the french minecraft events community.',
+  openGraph: {
+    description: "Communauté Events est une organization open-source, créant des outils pour la communauté event français sur Minecraft",
+    type: "website",
+    images: "https://commu.events/public/og-image.png"
+  },
+  twitter: {
+    card: "summary_large_image",
+    description: "Communauté Events est une organization open-source, créant des outils pour la communauté event français sur Minecraft",
+    images: "https://commu.events/public/og-image.png"
+  }
 }
 
 export default function RootLayout({

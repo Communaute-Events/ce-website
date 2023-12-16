@@ -4,83 +4,82 @@
  */
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { CardHeader, CardContent, Card } from "@/components/ui/card"
 import { Navbar } from "@/components/Navbar"
 import { ProjectCard } from "@/components/ProjectCard"
 
 export default function Component() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#1D1D1F] dark:bg-gray-900">
-      <Navbar />
-      <main className="flex-1">
-        <section className="w-full py-6 md:py-12 lg:py-16 xl:py-24 bg-[#1D1D1F] dark:bg-gray-800">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <img
-                alt="Communauté Events logo"
-                className="h-48 w-auto mb-4"
-                height="192"
-                src="/logo.png"
-                style={{
-                  aspectRatio: "192/192",
-                  objectFit: "cover",
-                }}
-                width="192"
-              />
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-gray-200 dark:text-gray-200">
-                  Bienvenue chez Communauté Events
-                </h1>
-                <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl dark:text-gray-400">
-                  Nous créons des outils pour la communauté d'évents Minecraft française.
-                </p>
-              </div>
-              <div className="space-x-4">
-                <a href="about">
-                  <Button className="bg-[#0D9488] hover:bg-[#36776b] text-white py-2 px-6 rounded-md">À propos</Button>
-                </a>
-                <a href="https://github.com/Communaute-Events">
-                  <Button className="bg-[#333] hover:bg-[#222] text-white py-2 px-6 rounded-md">
-                    <GithubIcon className="w-4 h-4 mr-2" />
-                    GitHub
-                  </Button>
-                </a>
+      <div className="flex flex-col min-h-screen bg-[#1D1D1F] dark:bg-gray-900">
+        <Navbar />
+        <main className="flex-1">
+          <section className="w-full py-6 md:py-12 lg:py-16 xl:py-24 bg-[#1D1D1F] dark:bg-gray-800">
+            <div className="container px-4 md:px-6">
+              <div className="flex flex-col items-center space-y-4 text-center">
+                <img
+                  alt="Communauté Events logo"
+                  className="h-48 w-auto mb-4"
+                  height="192"
+                  src="/logo.png"
+                  style={{
+                    aspectRatio: "192/192",
+                    objectFit: "cover",
+                  }}
+                  width="192"
+                />
+                <div className="space-y-2">
+                  <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-gray-200 dark:text-gray-200">
+                    Bienvenue chez Communauté Events
+                  </h1>
+                  <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl dark:text-gray-400">
+                    Nous créons des outils pour la communauté d'évents Minecraft française.
+                  </p>
+                </div>
+                <div className="space-x-4">
+                  <a href="about">
+                    <Button className="bg-[#0D9488] hover:bg-[#36776b] text-white py-2 px-6 rounded-md">À propos</Button>
+                  </a>
+                  <a href="https://github.com/Communaute-Events">
+                    <Button className="bg-[#333] hover:bg-[#222] text-white py-2 px-6 rounded-md">
+                      <GithubIcon className="w-4 h-4 mr-2" />
+                      GitHub
+                    </Button>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section className="w-full bg-[#1D1D1F] dark:bg-gray-900 py-12 md:py-24 lg:py-32 xl:py-48" id="projects">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-2xl font-bold mb-8 text-gray-200 dark:text-gray-200">Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <ProjectCard name="Events Helper" description="Events Helper, notre bot Discord, permet d'être notifié lorsqu'un évenement est détecté sur un serveur discord. Il est complétement customizable." link="/projects/events-helper">
-                <BotIcon className="w-4 h-4" />
-              </ProjectCard>
-              <ProjectCard name="Serveur Minecraft" description="Coming soon: Nous sommes actuellement entrain de développer un serveur Minecraft pour s'entraîner sur plusieurs épreuves récurrentes dans les évenements." link="/#projects">
-                <ServerIcon className="w-4 h-4" />
-              </ProjectCard>
-              <ProjectCard name="AutoLaunch" description="Une application de bureau permettant de rapidement lancer Minecraft dans la bonne version, avec les bons mods lorsqu'un évent est détecté." link="https://github.com/Communaute-Events/AutoLaunch">
-                <AppWindowIcon className="w-4 h-4" />
-              </ProjectCard>
-              <ProjectCard name="Events Monitor" description="Un websocket, fournissant des données sur de nombreux serveurs d'évents se trouvants sur Discord." link="https://github.com/Communaute-Events/ce-event-monitor">
-                <WebhookIcon className="w-4 h-4" />
-              </ProjectCard>
+          </section>
+          <section className="w-full bg-[#1D1D1F] dark:bg-gray-900 py-12 md:py-24 lg:py-32 xl:py-48" id="projects">
+            <div className="container px-4 md:px-6">
+              <h2 className="text-2xl font-bold mb-8 text-gray-200 dark:text-gray-200">Projects</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <ProjectCard name="Events Helper" description="Events Helper, notre bot Discord, permet d'être notifié lorsqu'un évenement est détecté sur un serveur discord. Il est complétement customizable." link="/projects/events-helper">
+                  <BotIcon className="w-4 h-4" />
+                </ProjectCard>
+                <ProjectCard name="Serveur Minecraft" description="Coming soon: Nous sommes actuellement entrain de développer un serveur Minecraft pour s'entraîner sur plusieurs épreuves récurrentes dans les évenements." link="/#projects">
+                  <ServerIcon className="w-4 h-4" />
+                </ProjectCard>
+                <ProjectCard name="AutoLaunch" description="Une application de bureau permettant de rapidement lancer Minecraft dans la bonne version, avec les bons mods lorsqu'un évent est détecté." link="https://github.com/Communaute-Events/AutoLaunch">
+                  <AppWindowIcon className="w-4 h-4" />
+                </ProjectCard>
+                <ProjectCard name="Events Monitor" description="Un websocket, fournissant des données sur de nombreux serveurs d'évents se trouvants sur Discord." link="https://github.com/Communaute-Events/ce-event-monitor">
+                  <WebhookIcon className="w-4 h-4" />
+                </ProjectCard>
+              </div>
             </div>
-          </div>
-        </section>
-      </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-[#0D9488] dark:border-gray-700">
-        <p className="text-xs text-gray-400 dark:text-gray-400">© Communauté Events. All rights reserved.</p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-xs hover:underline underline-offset-4 text-gray-400 dark:text-gray-400" href="#">
-            Terms of Service
-          </Link>
-          <Link className="text-xs hover:underline underline-offset-4 text-gray-400 dark:text-gray-400" href="#">
-            Privacy
-          </Link>
-        </nav>
-      </footer>
-    </div>
+          </section>
+        </main>
+        <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-[#0D9488] dark:border-gray-700">
+          <p className="text-xs text-gray-400 dark:text-gray-400">© Communauté Events. All rights reserved.</p>
+          <nav className="sm:ml-auto flex gap-4 sm:gap-6">
+            <Link className="text-xs hover:underline underline-offset-4 text-gray-400 dark:text-gray-400" href="#">
+              Terms of Service
+            </Link>
+            <Link className="text-xs hover:underline underline-offset-4 text-gray-400 dark:text-gray-400" href="#">
+              Privacy
+            </Link>
+          </nav>
+        </footer>
+      </div>
   )
 }
 

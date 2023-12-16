@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   openGraph: {
     description: "Events Helper est un bot d'alertes d'évenements Minecraft. Il est complétement configurable, et open-source.",
     type: "website",
-    images: "https://commu.events/public/og-image.png"
+    images: "https://commu.events/og-image.png"
   },
   twitter: {
     card: "summary_large_image",
     title: "Events Helper",
     description: "Events Helper est un bot d'alertes d'évenements Minecraft. Il est complétement configurable, et open-source.",
-    images: "https://commu.events/public/og-image.png"
+    images: "https://commu.events/og-image.png"
   }
 }
 

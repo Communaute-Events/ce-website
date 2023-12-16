@@ -6,13 +6,13 @@ export const metadata = {
     openGraph: {
       description: "Cliquez sur ce lien pour rejoindre le serveur Discord de Communauté Events",
       type: "website",
-      images: "https://commu.events/public/og-image.png"
+      images: "https://commu.events/og-image.png"
     },
     twitter: {
       card: "summary_large_image",
       title: "Notre discord",
       description: "Cliquez sur ce lien pour rejoindre le serveur Discord de Communauté Events",
-      images: "https://commu.events/public/og-image.png"
+      images: "https://commu.events/og-image.png"
     }
   }
 

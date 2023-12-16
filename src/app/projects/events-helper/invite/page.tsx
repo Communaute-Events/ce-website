@@ -6,13 +6,13 @@ export const metadata = {
     openGraph: {
       description: "Cliquez sur ce lien pour inviter le bot discord Events Helper",
       type: "website",
-      images: "https://commu.events/public/og-image.png"
+      images: "https://commu.events/og-image.png"
     },
     twitter: {
       card: "summary_large_image",
       title: "🤖 Inviter Events Helper",
       description: "Cliquez sur ce lien pour inviter le bot discord Events Helper",
-      images: "https://commu.events/public/og-image.png"
+      images: "https://commu.events/og-image.png"
     }
   }
 export default function InviteBot() {

@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     description: "Communauté Events est une organization open-source, créant des outils pour la communauté event français sur Minecraft",
     type: "website",
-    images: "https://commu.events/public/og-image.png"
+    images: "https://commu.events/og-image.png"
   },
   twitter: {
     card: "summary_large_image",
     description: "Communauté Events est une organization open-source, créant des outils pour la communauté event français sur Minecraft",
-    images: "https://commu.events/public/og-image.png"
+    images: "https://commu.events/og-image.png"
   }
 }
 

@@ -24,7 +24,7 @@ export function Navbar() {
             <Link className="text-sm font-medium text-gray-400 hover:underline dark:text-gray-300" href="https://github.com/Communaute-Events">
                 Github
             </Link>
-            <Link className="text-sm font-medium text-gray-400 hover:underline dark:text-gray-300" href="about">
+            <Link className="text-sm font-medium text-gray-400 hover:underline dark:text-gray-300" href="/about">
                 About
             </Link>
             <Link className="text-sm font-medium text-gray-400 hover:underline dark:text-gray-300" href="/#projects">

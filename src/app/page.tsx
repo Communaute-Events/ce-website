@@ -6,13 +6,14 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { CardHeader, CardContent, Card } from "@/components/ui/card"
 import { Navbar } from "@/components/Navbar"
+import { ProjectCard } from "@/components/ProjectCard"
 
 export default function Component() {
   return (
     <div className="flex flex-col min-h-screen bg-[#1D1D1F] dark:bg-gray-900">
-      <Navbar/>
+      <Navbar />
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-[#1D1D1F] dark:bg-gray-800">
+        <section className="w-full py-6 md:py-12 lg:py-16 xl:py-24 bg-[#1D1D1F] dark:bg-gray-800">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <img
@@ -52,61 +53,18 @@ export default function Component() {
           <div className="container px-4 md:px-6">
             <h2 className="text-2xl font-bold mb-8 text-gray-200 dark:text-gray-200">Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <a className="group" href="https://github.com/Communaute-Events/ce-discord-bot">
-                <Card className="transform transition-all duration-200 ease-in-out hover:scale-110">
-                  <CardHeader>
-                    <BotIcon className="w-4 h-4" />
-                    <h3 className="text-lg font-bold text-black dark:text-black">Bot Discord</h3>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-black dark:text-black">
-                      Events Helper, notre bot Discord, permet d'être notifié lorsqu'un évenement est détecté sur un
-                      serveur discord. Il est complétement customizable.
-                    </p>
-                  </CardContent>
-                </Card>
-              </a>
-              <a className="group" href="#projects">
-                <Card className="transform transition-all duration-200 ease-in-out hover:scale-110">
-                  <CardHeader>
-                    <ServerIcon className="w-4 h-4" />
-                    <h3 className="text-lg font-bold text-black dark:text-black">Notre serveur Minecraft</h3>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-black dark:text-black">
-                      Coming soon: Nous sommes actuellement entrain de développer un serveur Minecraft pour s'entraîner sur plusieurs
-                      épreuves récurrentes dans les évenements.
-                    </p>
-                  </CardContent>
-                </Card>
-              </a>
-              <a className="group" href="https://github.com/Communaute-Events/AutoLaunch">
-                <Card className="transform transition-all duration-200 ease-in-out hover:scale-110">
-                  <CardHeader>
-                    <AppWindowIcon className="w-4 h-4" />
-                    <h3 className="text-lg font-bold text-black dark:text-black">AutoLaunch</h3>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-black dark:text-black">
-                      Une application de bureau permettant de rapidement lancer Minecraft dans la bonne version, avec
-                      les bons mods lorsqu'un évent est détecté.
-                    </p>
-                  </CardContent>
-                </Card>
-              </a>
-              <a className="group" href="https://github.com/Communaute-Events/ce-event-monitor">
-                <Card className="transform transition-all duration-200 ease-in-out hover:scale-110">
-                  <CardHeader>
-                    <WebhookIcon className="w-4 h-4" />
-                    <h3 className="text-lg font-bold text-black dark:text-black">Events Monitor</h3>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-black dark:text-black">
-                      Un websocket, fournissant des données sur de nombreux serveurs d'évents se trouvants sur Discord.
-                    </p>
-                  </CardContent>
-                </Card>
-              </a>
+              <ProjectCard name="Events Helper" description="Events Helper, notre bot Discord, permet d'être notifié lorsqu'un évenement est détecté sur un serveur discord. Il est complétement customizable." link="/projects/events-helper">
+                <BotIcon className="w-4 h-4" />
+              </ProjectCard>
+              <ProjectCard name="Serveur Minecraft" description="Coming soon: Nous sommes actuellement entrain de développer un serveur Minecraft pour s'entraîner sur plusieurs épreuves récurrentes dans les évenements." link="/#projects">
+                <ServerIcon className="w-4 h-4" />
+              </ProjectCard>
+              <ProjectCard name="AutoLaunch" description="Une application de bureau permettant de rapidement lancer Minecraft dans la bonne version, avec les bons mods lorsqu'un évent est détecté." link="https://github.com/Communaute-Events/AutoLaunch">
+                <AppWindowIcon className="w-4 h-4" />
+              </ProjectCard>
+              <ProjectCard name="Events Monitor" description="Un websocket, fournissant des données sur de nombreux serveurs d'évents se trouvants sur Discord." link="https://github.com/Communaute-Events/ce-event-monitor">
+                <WebhookIcon className="w-4 h-4" />
+              </ProjectCard>
             </div>
           </div>
         </section>

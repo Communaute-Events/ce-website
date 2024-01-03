@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation"
 
 export const metadata = {
+    themeColor: "#439288",
     title: '🗃️ Nos projets',
     description: "Voici tous les projets sur lesquels nous travaillons actuellement, ou que nous avons fait.",
     openGraph: {

@@ -9,6 +9,7 @@ import { Navbar } from "@/components/Navbar"
 import { MemberCard } from "@/components/MemberCard"
 
 export const metadata = {
+  themeColor: "#439288",
   title: '❔ À propos de Communauté Events',
   description: "Communauté Events est une organization open-source, créant des outils pour la communauté event français sur Minecraft",
   openGraph: {

@@ -1,6 +1,7 @@
 import { RedirectType, redirect } from "next/navigation";
 
 export const metadata = {
+    themeColor: "#439288",
     title: 'Notre discord',
     description: "Cliquez sur ce lien pour rejoindre le serveur Discord de Communauté Events",
     openGraph: {

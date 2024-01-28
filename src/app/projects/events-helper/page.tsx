@@ -6,10 +6,13 @@ import { CardContent, Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Navbar } from "@/components/Navbar"
-import { Metadata } from "next"
+import { Metadata, Viewport } from "next"
+
+export const viewport: Viewport = {
+    themeColor: "#439288"
+}
 
 export const metadata: Metadata = {
-    themeColor: "#439288",
     title: 'Events Helper',
     description: "Events Helper est un bot d'alertes d'évenements Minecraft. Il est complétement configurable, et open-source.",
     openGraph: {

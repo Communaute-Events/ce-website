@@ -1,4 +1,9 @@
+import { Viewport } from "next";
 import { redirect } from "next/navigation";
+
+export const viewport: Viewport = {
+  themeColor: "#439288"
+}
 
 export const metadata = {
     title: '🤖 Inviter Events Helper',

@@ -7,21 +7,25 @@ import Head from "next/head"
 import { CardHeader, CardContent, Card } from "@/components/ui/card"
 import { Navbar } from "@/components/Navbar"
 import { MemberCard } from "@/components/MemberCard"
+import { Viewport } from "next"
+
+export const viewport: Viewport = {
+  themeColor: "#439288"
+}
 
 export const metadata = {
-  themeColor: "#439288",
-  title: '❔ À propos de Communauté Events',
+  title: 'À propos de Communauté Events',
   description: "Communauté Events est une organization open-source, créant des outils pour la communauté event français sur Minecraft",
   openGraph: {
     description: "Communauté Events est une organization open-source, créant des outils pour la communauté event français sur Minecraft",
     type: "website",
-    images: "https://commu.events/og-image.png"
+    images: "https://commu.events/about-og-image.png"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Events Helper",
+    title: "CE About",
     description: "Communauté Events est une organization open-source, créant des outils pour la communauté event français sur Minecraft",
-    images: "https://commu.events/og-image.png"
+    images: "https://commu.events/about-og-image.png"
   }
 }
 
@@ -58,10 +62,10 @@ export default function Component() {
           </section>
           <section className="w-full bg-[#1D1D1F] dark:bg-gray-900 py-8 md:py-16 lg:py-24 xl:py-32" id="team">
             <div className="container px-4 md:px-6">
-              <h2 className="text-2xl font-bold mb-8 text-gray-200 dark:text-gray-200">Notre équipe</h2>
+              <h2 className="text-2xl font-bold mb-2 text-gray-200 dark:text-gray-200">Notre équipe</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <MemberCard avatar="https://avatars.githubusercontent.com/u/74014262?s=70&v=4" name="Origaming" description="Salut! Je fais de la programmation depuis tout petit, et je travaille actuellement sur notre bot discord et serveur Minecraft!" link="https://github.com/OrigamingWasTaken" />
-                <MemberCard avatar="https://avatars.githubusercontent.com/u/89902968?v=4" name="Meek" description="gros noob" link="https://github.com/MeekOnGithub" />
+                <MemberCard avatar="https://avatars.githubusercontent.com/u/74014262?s=70&v=4" name="Origaming" description="Développeur TypeScript, Python, et Shell, j'aime beaucoup Minecraft et le Web!" link="https://github.com/OrigamingWasTaken" />
+                <MemberCard avatar="https://avatars.githubusercontent.com/u/89902968?v=4" name="Meek" description="Python nerd and web enthusiast (js = gaz)" link="https://github.com/MeekOnGithub" />
               </div>
             </div>
           </section>

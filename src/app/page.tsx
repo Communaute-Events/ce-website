@@ -58,7 +58,7 @@ export default function Component() {
                 <ProjectCard name="Serveur Minecraft" description="Coming soon: Nous sommes actuellement entrain de développer un serveur Minecraft pour s'entraîner sur plusieurs épreuves récurrentes dans les évenements." link="/#projects">
                   <ServerIcon className="w-4 h-4" />
                 </ProjectCard>
-                <ProjectCard name="AutoLaunch" description="Une application de bureau permettant de rapidement lancer Minecraft dans la bonne version, avec les bons mods lorsqu'un évent est détecté." link="https://github.com/Communaute-Events/AutoLaunch">
+                <ProjectCard name="AutoEvent" description="Une application de bureau permettant de rapidement lancer Minecraft dans la bonne version, avec les bons mods lorsqu'un évent est détecté." link="https://github.com/Communaute-Events/AutoEvent">
                   <AppWindowIcon className="w-4 h-4" />
                 </ProjectCard>
                 <ProjectCard name="Events Monitor" description="Un websocket, fournissant des données sur de nombreux serveurs d'évents se trouvants sur Discord." link="https://github.com/Communaute-Events/ce-event-monitor">

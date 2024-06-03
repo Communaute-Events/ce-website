@@ -33,7 +33,7 @@ export default function Component() {
   return (
       <div className="flex flex-col min-h-screen bg-[#1D1D1F] dark:bg-gray-900">
         <Navbar />
-        <main className="flex-1">
+        <main className="flex flex-col gap-0">
           <section className="w-full py-6 md:py-12 lg:py-16 xl:py-24 bg-[#1D1D1F] dark:bg-gray-800">
             <div className="container px-4 md:px-6">
               <div className="flex flex-col items-center space-y-4 text-center">
@@ -55,7 +55,7 @@ export default function Component() {
                   <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl dark:text-gray-400">
                     Nous sommes un groupe de passionnés de Minecraft créant des outils pour la communauté française des événements. Notre équipe est composée de développeurs et de joueurs acros (c'est faux) à Minecraft.
                   </p>
-                  <img src="arrow.png" alt="Arrow" className="w-[30%] ml-[35%]" />
+                  {/* <img src="arrow.png" alt="Arrow" className="w-[30%] ml-[35%]" /> */}
                 </div>
               </div>
             </div>
